@@ -1,0 +1,28 @@
+{
+  "name": "terbiumbot",
+  "version": "3.0.0",
+  "description": "A Modular and Powerful Telegram Bot",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "telegraf": "^3.25.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamnHub/terbiumbot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "thedevxen, youtwitface",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/DamnHub/terbiumbot/issues"
+  },
+  "homepage": "https://github.com/DamnHub/terbiumbot#readme"
+}
