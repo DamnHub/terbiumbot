@@ -28,8 +28,8 @@ const helpMessage = (invalid) => {
 const command = process.argv[2];
 const commands = {
     'start': {
-        call: () => {
-            require('./config/start.js');
+        call: (token, options) => {
+            require('./config/start.js')(token, options);
         }
     },
     'help': {
@@ -51,7 +51,9 @@ if (command in commands) {
                 .option('-u, --username <token>', 'Bot Username'.red)
                 .parse(process.argv);
             if (program.token === undefined) return log('Error: No Token provied'.red.bold);
-            commands[command].call(token, username);
+            commands[command].call(program.token, {
+                username: program.username
+            });
             break;
     }
 } else helpMessage(true);
