@@ -1,0 +1,5 @@
+{
+    "BOT_TOKEN": "",
+    "BOT_USERNAME": "",
+    "MONGO_URL": "mongodb://127.0.0.1/terbium"
+}

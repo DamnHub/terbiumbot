@@ -1,0 +1,14 @@
+{
+    "bot_started": "Bot started.",
+    "squad": {
+        "specify_name": "You must specify a squad name.",
+        "name_err_len": "Squad name must be between 3 and 14 characters.",
+        "joined": "Successfully joined the squad.",
+        "created": "Squad successfully created\n\nSquad name: <b>{{name}}</b>\nSquad ID: <code>{{id}}</code>"
+    },
+    "banned": "{{user}} has been banned by {{whom}}.",
+    "warned": "{{user}} has been warned by {{whom}}.",
+    "muted": "{{user}} has been muted by {{whom}}.",
+    "kicked": "{{user}} has been kicked by {{whom}}.",
+    "not_admin": "Sorry, This command can only be used by group admins"
+}
