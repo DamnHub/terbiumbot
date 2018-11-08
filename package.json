@@ -3,6 +3,9 @@
   "version": "3.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "./terb"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/terbiumbot/terbiumbot.git"
@@ -16,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/terbiumbot/terbiumbot/issues"
   },
-  "homepage": "https://github.com/terbiumbot/terbiumbot#readme"
+  "homepage": "https://github.com/terbiumbot/terbiumbot#readme",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "commander": "^2.19.0",
+    "mongoose": "^5.3.10",
+    "ramda": "^0.25.0",
+    "telegraf": "^3.25.0"
+  }
 }

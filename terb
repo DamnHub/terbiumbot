@@ -1,0 +1,61 @@
+#!/usr/bin/env node
+require('colors');
+const program = require('commander');
+const log = console.log;
+const params = {
+    '--token': {
+        required: true,
+        description: 'Token of the bot'
+    },
+    '--username': {
+        required: false,
+        description: 'Username of the bot'
+    },
+
+}
+const helpMessage = (invalid) => {
+    invalid ? this.info = 'Invalid Command\n\n'.red.bold : this.info = '';
+    this.info += `Usage: ${'./' + (process.argv[1].grey).split('/').pop()} [start]\n`;
+    for (key in params) {
+        const {
+            required,
+            description
+        } = params[key];
+        this.info += `\t${key.cyan}: ${description} ${!required && '(optional)'.yellow}\n`
+    }
+    log('\n' + this.info);
+}
+const command = process.argv[2];
+const commands = {
+    'start': {
+        call: () => {
+            require('./config/start.js');
+        }
+    },
+    'help': {
+        call: () => {
+            helpMessage()
+        }
+    },
+    '-v': {
+        call: () => {
+            console.log('Terbium ' + 'v3.0.0'.yellow);
+        }
+    }
+}
+if (command in commands) {
+    switch (command) {
+        case 'start':
+            program
+                .option('-t, --token <token>', 'Bot Token')
+                .option('-u, --username <token>', 'Bot Username'.red)
+                .parse(process.argv);
+            if (program.token === undefined) return log('Error: No Token provied'.red.bold);
+            commands[command].call(token, username);
+            break;
+    }
+} else helpMessage(true);
+
+// process.argv.forEach((val, index, array) => {
+
+// })
