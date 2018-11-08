@@ -1,0 +1,20 @@
+{
+  "name": "terbiumbot",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terbiumbot/terbiumbot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "Twit",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/terbiumbot/terbiumbot/issues"
+  },
+  "homepage": "https://github.com/terbiumbot/terbiumbot#readme"
+}
